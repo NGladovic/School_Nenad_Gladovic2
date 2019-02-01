@@ -1,7 +1,7 @@
 package main;
 import students.Students;
-import course.Course;
-import computer.Computer;
+//import course.Course;
+//import computer.Computer;
 
 public class Main {
 
@@ -9,11 +9,30 @@ public class Main {
     public static void main(String[] args) {
        
         Students cubes = new Students();
-        
-        
         cubes.studentsInfo();
-        cubes.getCourse();
-        cubes.studentsInfo();
+       
+        
+        cubes.getCourse().courseInfo();
+        cubes.getComputer().compInfo();
+        
+        Students data = new Students();
+        data.setFirstName("Petar");
+        data.setLastName("Petrovic");
+        data.setYearOfBirth(2001);
+        data.studentsInfo();
+        
+        data.getCourse().setName("qa");
+        data.getCourse().setNumberOfClasses(13);
+        data.getComputer().setProcessTact(4.1);
+        data.getComputer().setMemory(8);
+        data.getComputer().setHardDrive(2048);
+        data.studentsInfo();
+        data.getCourse().courseInfo();
+        data.getComputer().compInfo();
+      
+       
+        
+       
         
         
         

@@ -2,12 +2,12 @@ package students;
 import course.Course;
 import computer.Computer;
         
-public  class Students{
+public class Students{
     
     private String firstName;
     private String lastName;
     private int yearOfBirth;
-    private Course course = new Course();
+    private Course course;
     private Computer computer;
 
     public void setFirstName(String firstName) {
@@ -33,9 +33,18 @@ public  class Students{
         return yearOfBirth;
     }
 
-    public Course getCourse() {
-        return course;
+    public void setCourse(Course course) {
+        this.course = course;
     }
+
+    public Course getCourse() {
+        return this.course;
+    }
+    
+    public void setComputer(Computer computer) {
+        this.computer = computer;
+    }
+    
     public Computer getComputer(){
         return this.computer;
     } 
@@ -45,7 +54,10 @@ public  class Students{
         this.firstName = "Nenad";
         this.lastName = "Gladovic";
         this.yearOfBirth = 1989;
+        this.course = new Course();
+        this.computer = new Computer();
         
+       
     }
     
     public Students(String customName,String customLastname,int birthYear){
@@ -58,8 +70,8 @@ public  class Students{
         System.out.println("Ime " + this.firstName);
         System.out.println("Prezime " + this.lastName);
         System.out.println("Godina rodjenja: " + this.yearOfBirth);
-        System.out.println("Kurs: " + this.course);
-        System.out.println("Naziv kursa " + this.computer);
+//        System.out.println("Kurs: " + this.course);
+//        System.out.println("Naziv kursa " + this.computer);
 //        System.out.println("Broj casova: " + this.numberOfClasses);
 //        System.out.println("Operativni sistem: " + this.operatingSystem);
 //        System.out.println("Procesor " + this.processTact + " GHz");

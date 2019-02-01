@@ -40,7 +40,7 @@ public class Course {
     
     public void courseInfo(){
         System.out.println("Kurs: " + this.name);
-        System.out.println("Naziv kursa " + this.codeName);
+        System.out.println("Naziv " + this.codeName);
         System.out.println("Broj casova: " + this.numberOfClasses);
         System.out.println(" ");
     }

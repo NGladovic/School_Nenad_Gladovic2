@@ -22,14 +22,25 @@ public class Main {
         nenad.setCourse(qaCourse);
         nenad.getCourse().courseInfo();
         
-        Computer nenadpc = new Computer();
-        nenadpc.setOperatingSystem("Windows");
-        nenadpc.setProcessTact(3.1);
-        nenadpc.setHardDrive(128);
-        nenadpc.setMemory(4);
+        Computer pc = new Computer();
+        pc.setOperatingSystem("Windows");
+        pc.setProcessTact(3.1);
+        pc.setHardDrive(128);
+        pc.setMemory(4);
         
-        nenad.setComputer(nenadpc);
+        nenad.setComputer(pc);
         nenad.getComputer().compInfo();
+        
+        Students igor = new Students("Igor", "Dumi",1991 );
+        igor.studentsInfo();
+        
+        igor.setCourse(qaCourse);
+        igor.setComputer(pc);
+        igor.getCourse().courseInfo();
+        igor.getComputer().compInfo();
+        
+        
+        
         
 //       
 //        

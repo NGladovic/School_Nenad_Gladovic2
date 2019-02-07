@@ -1,34 +1,55 @@
 package main;
+import course.Course;
 import students.Students;
-//import course.Course;
-//import computer.Computer;
+import computer.Computer;
+
 
 public class Main {
 
     
     public static void main(String[] args) {
        
-        Students cubes = new Students();
-        cubes.studentsInfo();
-       
+        Students nenad = new Students();
         
-        cubes.getCourse().courseInfo();
-        cubes.getComputer().compInfo();
+        nenad.studentsInfo();
         
-        Students data = new Students();
-        data.setFirstName("Petar");
-        data.setLastName("Petrovic");
-        data.setYearOfBirth(2001);
-        data.studentsInfo();
+//        nenad.studentsInfo();
+//        
+        Course qaCourse = new Course();
+        qaCourse.setCodeName("QA3 - septembar 2018");
+        qaCourse.setNumberOfClasses(20);
         
-        data.getCourse().setName("qa");
-        data.getCourse().setNumberOfClasses(13);
-        data.getComputer().setProcessTact(4.1);
-        data.getComputer().setMemory(8);
-        data.getComputer().setHardDrive(2048);
-        data.studentsInfo();
-        data.getCourse().courseInfo();
-        data.getComputer().compInfo();
+        nenad.setCourse(qaCourse);
+        nenad.getCourse().courseInfo();
+        
+        Computer nenadpc = new Computer();
+        nenadpc.setOperatingSystem("Windows");
+        nenadpc.setProcessTact(3.1);
+        nenadpc.setHardDrive(128);
+        nenadpc.setMemory(4);
+        
+        nenad.setComputer(nenadpc);
+        nenad.getComputer().compInfo();
+        
+//       
+//        
+        
+//        nenad.getComputer().compInfo();
+//        
+//        Students data = new Students();
+//        data.setFirstName("Petar");
+//        data.setLastName("Petrovic");
+//        data.setYearOfBirth(2001);
+//        data.studentsInfo();
+//        
+//        data.getCourse().setName("qa");
+//        data.getCourse().setNumberOfClasses(13);
+//        data.getComputer().setProcessTact(4.1);
+//        data.getComputer().setMemory(8);
+//        data.getComputer().setHardDrive(2048);
+//        data.studentsInfo();
+//        data.getCourse().courseInfo();
+//        data.getComputer().compInfo();
       
        
         

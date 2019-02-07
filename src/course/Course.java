@@ -42,7 +42,7 @@ public class Course {
         System.out.println("Kurs: " + this.name);
         System.out.println("Naziv " + this.codeName);
         System.out.println("Broj casova: " + this.numberOfClasses);
-        System.out.println(" ");
+        
     }
     
 }

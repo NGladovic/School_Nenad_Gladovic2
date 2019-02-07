@@ -2,7 +2,7 @@ package students;
 import course.Course;
 import computer.Computer;
         
-public class Students{
+public class Students {
     
     private String firstName;
     private String lastName;
@@ -70,14 +70,8 @@ public class Students{
         System.out.println("Ime " + this.firstName);
         System.out.println("Prezime " + this.lastName);
         System.out.println("Godina rodjenja: " + this.yearOfBirth);
-//        System.out.println("Kurs: " + this.course);
-//        System.out.println("Naziv kursa " + this.computer);
-//        System.out.println("Broj casova: " + this.numberOfClasses);
-//        System.out.println("Operativni sistem: " + this.operatingSystem);
-//        System.out.println("Procesor " + this.processTact + " GHz");
-//        System.out.println("RAM memorija " + this.memory + " GB");
-//        System.out.println("Hard disk " + this.hardDrive + " GB");
-        System.out.println(" ");
+        
+        
     }
     
     
